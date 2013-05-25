@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>#GlobalP2P: 48 horas de transnacionalidad P2P</title>
+
+
+    <!-- Estilos -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,100,200,300,500,600,700' rel='stylesheet' type='text/css'>-->
+    <link type="text/css" href="css/jquery-ui-1.8.22.custom.css" rel="stylesheet" />
+    <link type="text/css" href="css/encuesta15m.css" rel="stylesheet" />
+
+    <!-- JS's -->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script type="text/javascript" src="js/d3.v2.js"></script>
+    <script type="text/javascript" src="js/d3.layout.cloud.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/lib/controller/wordCloudEncuestas.js"></script>
+    <script type="text/javascript" src="js/lib/viz/wordCloud.js"></script>
+
+</head>
+<body>
+
+<div id="allParent">
+    <script>
+
+
+        var myMobileMap = outliers.controller.wordCloudEncuestas(
+                {
+                    'idName':"allParent",
+                    'className':"map",
+                    'baseJUrl':"data/",
+                    'imgPath':"img/",
+                    'dataFile':"testWC9.json",
+                    'font':"American Typewriter",
+                    'year':"2012",
+                    'debugLevel':2
+                });
+
+    </script>
+
+</div>
+
+</body>
+</html>
