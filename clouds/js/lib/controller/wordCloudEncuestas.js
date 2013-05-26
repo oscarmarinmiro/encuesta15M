@@ -130,10 +130,7 @@ outliers.controller.wordCloudEncuestas = function(options)
                     //console.log(d["1"]);
                     var flag="ok";
                     for(entry in self.keys){
-                        //console.log("AVER AVER");
-                        //console.log(d[self.keys[entry].toString()]);
-                        //console.log(self.values[self.keys[entry]]);
-                        //if(self.values[self.keys[entry].toString()]!="Todos" && d[self.keys[entry].toString()]!=self.values[self.keys[entry].toString()]){flag="ko";}
+                        
                         if(self.values[self.keys[entry].toString()].indexOf("Todos")<0 && self.values[self.keys[entry].toString()].indexOf(d[self.keys[entry].toString()])<0){flag="ko";}
                     }
                     if(flag=="ok"){
@@ -209,11 +206,15 @@ outliers.controller.wordCloudEncuestas = function(options)
                 if(this.id=="18"){
                     var aux = this.value.split('-')
                     self.values[this.id] = [];
-                    for(i=aux[0];i<aux[1];i++){
+                    for(i=aux[0];i<(parseInt(aux[1]));i++){
                         self.values[this.id].push(i.toString());
                     }
+                    console.log("yehaaaaaaaaaaaaa!!!!!!!!!!");
+                    console.log(self.values[this.id]);
                 }
-                self.values[this.id] = [this.value];
+                else{
+                    self.values[this.id] = [this.value];
+                }
                 //console.log(self.values);
                 self.key = this.id;
                 self.value = this.value;

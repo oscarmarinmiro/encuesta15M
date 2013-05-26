@@ -17,6 +17,9 @@ outliers.viz.wordCloud= function (options)
 
     self.parentSelect = "#"+self.idName;
 
+    self.colors = ["#AD0001","#000","#222"];
+
+
     self.init = function(){
 
         // svg init
@@ -45,13 +48,6 @@ outliers.viz.wordCloud= function (options)
             .attr("y", 0)
             .text(self.loadingMessage);
 
-        // Si es un layout, lo invoco
-        // d3.layout.chord object....
-
-//        self.chord = d3.layout.chord()
-//            .padding(self.chordPadding)
-//            .sortSubgroups(d3.ascending)
-//            .sortChords(d3.ascending);
 
 
     }
@@ -140,6 +136,7 @@ outliers.viz.wordCloud= function (options)
                 .style("font-size", function(d) { return d.size + "px"; })
                 .style("font-family",self.font)
                 //.style("fill",function(d){return d.text.charAt(0)=="#" ? "#25A":"#222";})
+                .style("fill", function(d, i) { if(d.size<20){return self.colors[2];}else{if(d.size<30){return self.colors[1];}else{return self.colors[0];}}})
                 .style("opacity",1e-6)
                 .transition()
                 .duration(self.transTime)
