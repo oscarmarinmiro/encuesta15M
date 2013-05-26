@@ -37,11 +37,17 @@
         var myMobileMap = outliers.controller.heatmapC(
            {
                'idName':"content",
+               'width': 1000,
+               'height': 800,
+               'scale': 2000,
+               'translate': [700, 1800],
+               //'colorRange': [d3.rgb(247,252,245), d3.rgb(0,68,27)],0, 16)],
+                'colorRange': [d3.rgb(247, 251, 255), d3.rgb(107, 174, 214), d3.rgb(8, 48, 107)],
+                'hlColorRange': [d3.rgb(255, 245, 240), d3.rgb(251, 106, 74), d3.rgb(103, 0, 13)],
                'className':"map",
                'baseJUrl':"data/",
                'geoDataFile':"heatmap/spainProvinces.json",
                'dataFile':"heatmap/encuestaProvinces.csv",
-               'font':"American Typewriter",
                'debugLevel':2
            });
     </script>

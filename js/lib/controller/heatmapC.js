@@ -39,11 +39,12 @@ outliers.controller.heatmapC = function(options)
         self.heatmap = outliers.viz.heatmapV({
            'parentId':"chartContent",
            'idInfo': self.idInfo,
-           'width':960,
-           'height':600,
-           'scale': 1500,
-           'translate': [500, 1300],
-           'colorRange': [d3.rgb(247,252,245), d3.rgb(0,68,27)],
+           'width':self.width,
+           'height':self.height,
+           'scale': self.scale,
+           'translate': self.translate,
+           'colorRange': self.colorRange,
+           'hlColorRange': self.hlColorRange,
            'loadingMessage':"Loading data...",
            'padding': '2px',
            'myLog':myLog
@@ -57,8 +58,6 @@ outliers.controller.heatmapC = function(options)
         });
 
         $('input[name="dataIn"]').change(function(){
-               //console.log("THIS");
-               //console.log(self.values);
                self.heatmap.render(this.value);
         });
     });
