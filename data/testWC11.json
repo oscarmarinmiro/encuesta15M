@@ -84630,17 +84630,6 @@
                 ], 
                 "title": "\u00bfHas participado en alguna de las acampadas del 15-M?"
             }, 
-            "18": {
-                "values": [
-                    "Todos", 
-                    "1900-1920", 
-                    "1920-1940", 
-                    "1940-1960", 
-                    "1960-1980", 
-                    "1980-2000"
-                ], 
-                "title": "\u00bfEn qu\u00e9 a\u00f1o has nacido? (p.e: 1978)"
-            }, 
             "28": {
                 "values": [
                     "Todos", 
@@ -84659,28 +84648,8 @@
                     " Other"
                 ], 
                 "title": "\u00bfCon cu\u00e1l de estos partidos te identificas m\u00e1s?"
-            }, 
-            "29": {
-                "values": [
-                    "Todos", 
-                    "Rajoy", 
-                    "Rubalcaba", 
-                    "Cayo Lara", 
-                    "Rosa D\u00edez", 
-                    "Josep Antoni Duran i Lleida", 
-                    "Josu Erkoreka", 
-                    "Alfred Bosch", 
-                    "Francisco Jorquera", 
-                    "Ana Oramas", 
-                    "Juan L\u00f3pez de Uralde", 
-                    "Vot\u00e9 en blanco", 
-                    "No vot\u00e9", 
-                    "Vot\u00e9 nulo", 
-                    "Otro"
-                ], 
-                "title": "\u00bfA qui\u00e9n votaste en las elecciones generales del 2011?"
             }
-        }, 
+        },
         "cloudValues": [
             17, 
             35
