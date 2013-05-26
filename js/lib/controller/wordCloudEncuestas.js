@@ -73,7 +73,7 @@ outliers.controller.wordCloudEncuestas = function(options)
         {
             'idName':"chartContent",
             'idInfo': self.idInfo,
-            'width':400,
+            'width':600,
             'height':400,
             'transTime':1500,
             'opacityScale': self.opacityScale,
@@ -88,7 +88,7 @@ outliers.controller.wordCloudEncuestas = function(options)
         {
             'idName':"chartContent",
             'idInfo': self.idInfo,
-            'width':400,
+            'width':600,
             'height':400,
             'transTime':1500,
             'opacityScale': self.opacityScale,
