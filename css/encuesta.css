@@ -1,3 +1,8 @@
+.chartContent{
+    margin-left: 170px;
+}
+
+
 body
 {
         font-family: "Helvetica";
@@ -76,8 +81,4 @@ h2
 {
     font-size: 20px;
     font-weight: normal;
-}
-
-.provincias
-{
 }

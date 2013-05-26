@@ -72,14 +72,14 @@ outliers.controller.wordCloudEncuestas = function(options)
         {
             'idName':"chartContent",
             'idInfo': self.idInfo,
-            'width':500,
-            'height':500,
+            'width':700,
+            'height':300,
             'transTime':1500,
             'opacityScale': self.opacityScale,
             'loadingMessage':"Loading data...",
             'colorScale': self.colorScale,
             'font': self.font,
-            'padding': 10,
+            'padding': 5,
             'myLog':myLog
         });
 
@@ -87,14 +87,14 @@ outliers.controller.wordCloudEncuestas = function(options)
         {
             'idName':"chartContent",
             'idInfo': self.idInfo,
-            'width':500,
-            'height':500,
+            'width':700,
+            'height':300,
             'transTime':1500,
             'opacityScale': self.opacityScale,
             'loadingMessage':"Loading data...",
             'colorScale': self.colorScale,
             'font': self.font,
-            'padding': 10,
+            'padding': 5,
             'myLog':myLog
         });
 
@@ -114,7 +114,7 @@ outliers.controller.wordCloudEncuestas = function(options)
                     
                     prehtml = prehtml+'<option value="'+d+'">'+d+'</option>'
                 });
-                html = html+'<select name="dataIn" id='+key+'>'+prehtml+'</select> --> '+value.title+'<br>';
+                html = html+'<select name="dataIn" id='+key+'>'+prehtml+'</select>     '+value.title+'<br>';
 
             });
 
