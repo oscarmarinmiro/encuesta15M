@@ -56,10 +56,11 @@ outliers.controller.wordCloudEncuestas = function(options)
                 //'</form>',
                 '</div>',
                 '<div id="contenedorCI" class="contenedorCI">',
-                '<div id="zonaChart" class="zonaChart">',
+                '<div id="zonaChart" class="zonaChart" style="float:left">',
             '<div id="chartContent" class="chartContent"></div>',
+            '<div style="clear:both;"></div>',
             '</div>',
-            '</div>',
+            '</div>'
         ].join('\n');
 
 
@@ -72,8 +73,8 @@ outliers.controller.wordCloudEncuestas = function(options)
         {
             'idName':"chartContent",
             'idInfo': self.idInfo,
-            'width':700,
-            'height':300,
+            'width':400,
+            'height':400,
             'transTime':1500,
             'opacityScale': self.opacityScale,
             'loadingMessage':"Loading data...",
@@ -87,8 +88,8 @@ outliers.controller.wordCloudEncuestas = function(options)
         {
             'idName':"chartContent",
             'idInfo': self.idInfo,
-            'width':700,
-            'height':300,
+            'width':400,
+            'height':400,
             'transTime':1500,
             'opacityScale': self.opacityScale,
             'loadingMessage':"Loading data...",

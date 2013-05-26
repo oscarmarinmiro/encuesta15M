@@ -63,7 +63,7 @@ outliers.viz.wordCloud= function (options)
         console.log("Me llegan los datos");
         //console.log(data);
 
-        var wordData = data.slice(0,20);
+        var wordData = data.slice(0,60);
 
         //self.myLog("wordData",3);
         //self.myLog(wordData,3);
@@ -74,7 +74,7 @@ outliers.viz.wordCloud= function (options)
 
         if(wordData.length==0)
         {
-            alert("NO HAY DATOS, CHATO");
+            alert("No hay datos para esta combinación");
         }
         else
         {
