@@ -204,7 +204,7 @@ outliers.controller.wordCloudEncuestas = function(options)
                 //console.log("THIS");
                 //console.log(self.values);
                 console.log(this);
-                if(this.id=="18"){
+                if(this.id=="18" && this.value!="Todos"){
                     var aux = this.value.split('-')
                     self.values[this.id] = [];
                     for(i=aux[0];i<(parseInt(aux[1]));i++){
