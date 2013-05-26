@@ -10,6 +10,10 @@ body
         font-size:12px;
 }
 
+a
+{
+    color:#777;
+}
 .bigHeader
 {
     font-family: "Helvetica";
@@ -81,4 +85,11 @@ h2
 {
     font-size: 20px;
     font-weight: normal;
+}
+
+h3
+{
+    font-size:16px;
+    font-weight: normal;
+    color: #777;
 }
